@@ -22,4 +22,15 @@ text_field = Text(window,
             )
 text_field.place(x=15,y=100)
 
+add_button = Button(window,
+                    text="Add",
+                    font=("Ink Free",12,BOLD),
+                    fg="white",
+                    bg="light green",
+                    height=1,
+                    width=6,
+                    activeforeground="white",
+                    activebackground="light green")
+add_button.place(x=275,y=95)
+
 window.mainloop()

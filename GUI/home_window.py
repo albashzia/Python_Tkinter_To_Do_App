@@ -6,6 +6,20 @@ window = Tk()
 window.title("To Do App")
 window.geometry("350x500")
 
+menu_bar = Menu(window)
+window.config(menu=menu_bar)
+
+file_menu = Menu(menu_bar)
+menu_bar.add_cascade(label="File",menu=file_menu)
+file_menu.add_command(label="Save")
+file_menu.add_command(label="Load")
+file_menu.add_command(label="Exit")
+
+help_menu = Menu(menu_bar)
+menu_bar.add_cascade(label="Help",menu=help_menu)
+help_menu.add_command(label="User Guide")
+
+
 title_label = Label(window,
                     text="To-Do App",
                     font=("Ink Free",20,BOLD),

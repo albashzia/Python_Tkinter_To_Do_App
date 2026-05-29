@@ -12,6 +12,7 @@ env/
 # PyCharm / IntelliJ
 .idea/
 *.iml
+.idea/workspace.xml
 
 # OS files
 .DS_Store

@@ -14,4 +14,12 @@ title_label = Label(window,
 )
 title_label.place(x=105,y=10)
 
+text_field = Text(window,
+            bg="white",
+            font=('Ink Free',12,BOLD),
+            height=1,
+            width=25,
+            )
+text_field.place(x=15,y=100)
+
 window.mainloop()

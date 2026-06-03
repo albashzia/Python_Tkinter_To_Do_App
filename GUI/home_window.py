@@ -6,6 +6,10 @@ from Code import to_do_app_code
 def add_to_list():
     text = text_field.get("1.0",END)
     to_do_app_code.tasks.append(text)
+    list_box.delete(0, END)
+    for i in range(len(tasks)):
+        list_box.insert(i, tasks[i])
+    list_box.update()
 
 window = Tk()
 
@@ -65,6 +69,4 @@ list_box.place(x = 15, y = 140)
 
 tasks = to_do_app_code.tasks
 
-for i in range(len(tasks)):
-    list_box.insert(i,tasks[i])
 window.mainloop()

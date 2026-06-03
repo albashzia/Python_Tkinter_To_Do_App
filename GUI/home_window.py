@@ -1,6 +1,8 @@
 from tkinter import *
 from tkinter.font import BOLD
 
+from Code import to_do_app_code
+
 window = Tk()
 
 window.title("To Do App")
@@ -56,4 +58,8 @@ list_box = Listbox(window,
 )
 list_box.place(x = 15, y = 140)
 
+list = to_do_app_code.list
+
+for i in range(len(list)):
+    list_box.insert(i,list[i])
 window.mainloop()

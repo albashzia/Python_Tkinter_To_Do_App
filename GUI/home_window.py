@@ -5,7 +5,7 @@ from Code import to_do_app_code
 
 def add_to_list():
     text = text_field.get("1.0",END)
-    to_do_app_code.tasks.add_task(text)
+    to_do_app_code.tasks.append(text)
 
 window = Tk()
 

@@ -1,7 +1,7 @@
-list = []
+tasks = []
 
 def add_task(task):
-    list.append(task)
+    tasks.append(task)
 
 def remove_task(task):
-    list.remove(task)
+    tasks.remove(task)

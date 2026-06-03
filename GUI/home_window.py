@@ -47,4 +47,13 @@ add_button = Button(window,
                     activebackground="light green")
 add_button.place(x=275,y=95)
 
+list_box = Listbox(window,
+                  bg='#F7FFDE',
+                  font=('Constantia',14),
+                  height=14,
+                  width = 28,
+                  selectmode=MULTIPLE
+)
+list_box.place(x = 15, y = 140)
+
 window.mainloop()

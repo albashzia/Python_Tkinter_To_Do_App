@@ -3,6 +3,10 @@ from tkinter.font import BOLD
 
 from Code import to_do_app_code
 
+def add_to_list():
+    text = text_field.get(0,END)
+    list.add_task(text)
+
 window = Tk()
 
 window.title("To Do App")

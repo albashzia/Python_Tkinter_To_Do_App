@@ -11,6 +11,8 @@ def add_to_list():
         list_box.insert(i, tasks[i])
     list_box.update()
 
+tasks = to_do_app_code.tasks
+
 window = Tk()
 
 window.title("To Do App")
@@ -66,7 +68,5 @@ list_box = Listbox(window,
                   selectmode=MULTIPLE
 )
 list_box.place(x = 15, y = 140)
-
-tasks = to_do_app_code.tasks
 
 window.mainloop()

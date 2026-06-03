@@ -4,8 +4,8 @@ from tkinter.font import BOLD
 from Code import to_do_app_code
 
 def add_to_list():
-    text = text_field.get(0,END)
-    list.add_task(text)
+    text = text_field.get("1.0",END)
+    to_do_app_code.tasks.add_task(text)
 
 window = Tk()
 
@@ -63,8 +63,8 @@ list_box = Listbox(window,
 )
 list_box.place(x = 15, y = 140)
 
-list = to_do_app_code.list
+tasks = to_do_app_code.tasks
 
-for i in range(len(list)):
-    list_box.insert(i,list[i])
+for i in range(len(tasks)):
+    list_box.insert(i,tasks[i])
 window.mainloop()

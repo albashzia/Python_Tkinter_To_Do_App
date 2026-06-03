@@ -62,7 +62,7 @@ add_button.place(x=275,y=95)
 
 list_box = Listbox(window,
                   bg='#F7FFDE',
-                  font=('Constantia',14),
+                  font=('Ink Free',14),
                   height=14,
                   width = 28,
                   selectmode=MULTIPLE

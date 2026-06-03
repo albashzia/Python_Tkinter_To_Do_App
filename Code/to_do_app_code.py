@@ -1,1 +1,2 @@
+global tasks
 tasks = []

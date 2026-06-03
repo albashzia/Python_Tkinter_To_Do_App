@@ -50,7 +50,8 @@ add_button = Button(window,
                     height=1,
                     width=6,
                     activeforeground="white",
-                    activebackground="light green")
+                    activebackground="light green",
+                    command=add_to_list)
 add_button.place(x=275,y=95)
 
 list_box = Listbox(window,

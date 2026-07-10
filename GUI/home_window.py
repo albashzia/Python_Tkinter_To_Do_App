@@ -9,7 +9,7 @@ def add_to_list():
         to_do_app_code.tasks.append(text)
         list_box.delete(0, END)
         for task in tasks:
-            list_box.insert(task)
+            list_box.insert(END,task)
         list_box.update()
 
 tasks = to_do_app_code.tasks

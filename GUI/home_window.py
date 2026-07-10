@@ -10,6 +10,7 @@ def add_to_list():
         list_box.delete(0, END)
         for task in tasks:
             list_box.insert(END,task)
+        text_field.delete("1.0", END)
         list_box.update()
 
 tasks = to_do_app_code.tasks

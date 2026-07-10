@@ -8,8 +8,8 @@ def add_to_list():
     if text:
         to_do_app_code.tasks.append(text)
         list_box.delete(0, END)
-        for i in range(len(tasks)):
-            list_box.insert(i, tasks[i])
+        for task in tasks:
+            list_box.insert(task)
         list_box.update()
 
 tasks = to_do_app_code.tasks
